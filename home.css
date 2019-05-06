@@ -1,0 +1,12 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("fonts/OpenSans-Regular.ttf");
+  }
+
+  body, html{
+      text-align: center;
+  }
+.logins{
+    color: black;
+    font-family: OpenSans; 
+}

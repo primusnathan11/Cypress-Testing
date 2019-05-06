@@ -1,0 +1,227 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("fonts/OpenSans-Regular.ttf");
+  }
+  html{
+    height: 100%;
+  }
+body{
+    height:100%;
+    font-family: OpenSans;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url(assets/img/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.check{
+  margin-left: 20px;
+  font-size: 15px;
+}
+.container{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top:50px;
+    margin-bottom: 10px;
+    font-size:1.2em;
+    background:black;
+  background: -webkit-linear-gradient(top, grey, black);
+  background: -o-linear-gradient(top, grey, black);
+  background: -moz-linear-gradient(top,grey, black);
+  background: linear-gradient(top, grey,black);
+    width: 85%;
+    height: 85%;
+      border-radius: 25px 40px;
+      position: relative;
+      color: white;
+  }
+  
+   .container .inputbox label{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  pointer-events: none;
+  font-size: 17px;
+  transition: .5;
+   }
+   .container .inputbox input:focus~label,.container .inputbox input:valid~label
+   {
+        transition: .5s;
+        top: -2px;
+         font-size: 0.75em;
+   }
+  .container .inputbox{position: relative;}
+  .container .inputbox input
+    {width: 100%;
+    padding: 10px;
+    font-size: 75%;}
+  
+  .container input[type="submit"]{
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
+    height: 40px;
+    width: 80%;
+    border-radius: 25px;
+    margin-left: 8%;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .register{
+    font-size: 15px;
+  }
+  .container input[type="text"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+    width:80%;
+    background-color: transparent;
+    transition-duration: 0.8s;
+    color: white;
+  }
+  .container input[type="password"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+    width:80%;
+    background-color: transparent;
+    transition-duration: 0.8s;
+    color: white;
+  }
+  .container input[type="submit"]{
+    width: 40%;
+    font-size: 15px;
+    margin-left: 0%;
+  }
+  .name{
+    outline: none;
+  }
+  .container input[type="password"]:focus{
+    outline: none;
+  }
+  .username
+  {
+    top: 10px;
+    left: 30px;
+    pointer-events: none;
+    transition: .5;
+    position: absolute;
+    font-size: 17px;
+  
+  }
+  
+  .container .inputbox input:valid~.username,
+  .container .inputbox input:focus~.username{
+       transition: .5s;
+       top: -18px;
+       font-size: 0.75em;}
+
+
+  
+  .inputbox{
+    color: white;
+  }
+  
+  .link:link,
+.link:active,
+.link:visited{
+	color: rgb(211, 211, 211);
+	text-decoration: none;
+	padding: 10px;
+	font-family: sans-serif;	
+}
+@media only screen and (min-width:768px){
+  .container{
+    font-size:30px;
+  }
+  .container .inputbox label{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    pointer-events: none;
+    font-size: 25px;
+    transition: .5;
+     }
+
+     .container .inputbox input:focus~label,.container .inputbox input:valid~label
+     {
+          transition: .5s;
+          margin-top: -20px;
+           font-size: 25px;
+     }
+     .username{
+       font-size:25px;
+     }
+     #password{
+       font-size:25px;
+     }
+     .check{
+       font-size:20px;
+     }
+     .container input[type="submit"]{
+       height:50px;
+       font-size: 25px;
+     }  
+     #showpass{
+       width:20px;
+      height: 20px;
+     }
+     .register{
+       font-size: 23px
+     }
+     
+     .inputbox{
+       margin-top:50px;
+     }
+     
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .container{
+    font-size: 22px;
+    width: 400px;
+    margin-left: 450px;
+  }
+
+  .container .inputbox label{
+    font-size: 18px;
+  }
+
+  .username{
+    font-size: 10px;
+  }
+
+  #showpass{
+    width: 15px;
+   height: 15px;
+  }
+
+  .container input[type="submit"]{
+    height:50px;
+    font-size: 22px;
+    margin-top: 20px;
+  } 
+
+  .register{
+    font-size: 14px;
+    margin-top: -20px;
+  }
+
+  .check{
+    font-size: 16px;
+  }
+  .container .inputbox input:focus~label,.container .inputbox input:valid~label
+  {
+       transition: .5s;
+       margin-top: -10px;
+        font-size: 25px;
+  }
+ 
+}
